@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>学習ログ管理</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>📘 学習ログ管理</h1>
+
+  <form id="logForm" class="card">
+    <label>
+      学習内容
+      <input type="text" id="title" required>
+    </label>
+
+    <label>
+      学習時間（分）
+      <input type="number" id="time" min="1" required>
+    </label>
+
+    <button type="submit">保存</button>
+  </form>
+
+  <h2>記録一覧</h2>
+  <ul id="logList"></ul>
+
+  <p id="serverComment"></p>
+
+  <script src="main.js"></script>
+</body>
+</html>
